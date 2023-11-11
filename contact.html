@@ -1,80 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Reach out for inquiries, assistance, or just to share your rainy-day stories. We're here to help you find the perfect rain jacket. Let's stay dry together!">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reach out for inquiries, assistance, or just to share your rainy-day stories. We're here to help you find the perfect rain jacket. Let's stay dry together!"
+    />
     <title>Contact us | Rainy Days</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/contact.css">
-    <link rel="stylesheet" href="src/css/media.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="assets/images/RainyDays_Logo.png" alt="Rainy Days logo" />
-      </a>
-    </div>
-    <div class="icons">
-      <div>
-        <img src="assets/images/Search.svg" alt="Search" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
+    <link rel="stylesheet" href="src/css/media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/RainyDays_Logo.png" alt="Rainy Days logo" />
+        </a>
       </div>
-      <div>
-        <img src="assets/images/Profile.svg" alt="View Profile" />
+      <div class="icons">
+        <div>
+          <img src="assets/images/Search.svg" alt="Search" />
+        </div>
+        <div>
+          <img src="assets/images/Profile.svg" alt="View Profile" />
+        </div>
+        <div>
+          <img src="assets/images/Cart.svg" alt="View Cart" />
+        </div>
       </div>
-      <div>
-        <img src="assets/images/Cart.svg" alt="View Cart" />
+      <div class="menu">
+        <input type="checkbox" id="menu-checkbox" />
+        <label id="menu-label" for="menu-checkbox"></label>
+        <nav>
+          <ul>
+            <li>Women</li>
+            <li><a href="store.html">Men</a></li>
+            <li>Brands</li>
+            <li>Outlet</li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <div class="menu">
-      <input type="checkbox" id="menu-checkbox" />
-      <label id="menu-label" for="menu-checkbox"></label>
-      <nav>
-        <ul>
-          <li>Women</li>
-          <li><a href="store.html">Men</a></li>
-          <li>Brands</li>
-          <li>Outlet</li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
     <main class="contact">
       <section class="contact--content">
         <h1 class="big-heading">Contact us</h1>
-          <p class="medium-font">Do you have questions you can’t find the answer to in our FAQs? Feel free to use the contact form to get in touch with us. We will reply you within the next working day.</p>
-          <p class="medium-font">You may also reach us by sending a mail to post@rainydays.com.</p>
+        <p class="medium-font">
+          Do you have questions you can’t find the answer to in our FAQs? Feel
+          free to use the contact form to get in touch with us. We will reply
+          you within the next working day.
+        </p>
+        <p class="medium-font">
+          You may also reach us by sending a mail to post@rainydays.com.
+        </p>
       </section>
-      <section class="contact--submission">
+      <div class="contact--submission">
         <form class="contact-form medium-font">
           <div class="entryfields contact-form-inputs margin0">
-            <input class="entry-input" type="text" id="name" name="name" required/>
+            <input
+              class="entry-input"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
             <label class="entry-label" for="name">Name</label>
           </div>
           <div class="entryfields contact-form-inputs margin0">
-            <input class="entry-input" type="email" id="contact-email" name="email" required/>
+            <input
+              class="entry-input"
+              type="email"
+              id="contact-email"
+              name="email"
+              required
+            />
             <label class="entry-label" for="contact-email">Email</label>
           </div>
           <div class="entryfields contact-form-inputs margin0">
-            <input class="entry-input" type="email" id="topic" name="topic" required/>
+            <input
+              class="entry-input"
+              type="email"
+              id="topic"
+              name="topic"
+              required
+            />
             <label class="entry-label" for="topic">Topic</label>
           </div>
           <div class="entryfields contact-form-textarea margin0">
-            <textarea class="entry-input" id="message" name="message" required></textarea>
-            <label class="entry-label" for="message">Write your message here</label>
+            <textarea
+              class="entry-input"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <label class="entry-label" for="message"
+              >Write your message here</label
+            >
           </div>
         </form>
         <div class="contact-cta">
-          <button id="contact-button" class="cta medium-font">Send message</button>
+          <button id="contact-button" class="cta medium-font">
+            Send message
+          </button>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="footer-menu1 big-font">
@@ -91,13 +144,17 @@
       </div>
       <div class="copyright small-font">
         <div class="logo-footer">
-          <img src="assets/images/RainyDays_Logo_white.png" alt="White Rainy Days logo" class="logo-footer"/>
+          <img
+            src="assets/images/RainyDays_Logo_white.png"
+            alt="White Rainy Days logo"
+            class="logo-footer"
+          />
         </div>
         <p>©2023 Rainydays</p>
       </div>
       <div class="socials">
         <div>
-          <img src="assets/images/Facebook.svg" alt=Facebook />
+          <img src="assets/images/Facebook.svg" alt="Facebook" />
         </div>
         <div>
           <img src="assets/images/Instagram.svg" alt="Instagram" />
@@ -110,5 +167,5 @@
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>

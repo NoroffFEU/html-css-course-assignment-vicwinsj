@@ -3,7 +3,7 @@
 @import url("./imports/variables.css");
 
 html {
-  font-family: 'General Sans', sans-serif;
+  font-family: "General Sans", sans-serif;
 }
 
 body {
@@ -78,7 +78,7 @@ a {
 /* Header */
 
 header {
-  border-bottom: .1rem solid var(--color-cta);
+  border-bottom: 0.1rem solid var(--color-cta);
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -98,7 +98,7 @@ nav {
   font-weight: 400;
   padding: 0;
   width: 100vw;
-  height: 30rem;
+  height: 34.6rem;
   text-decoration: none;
   color: var(--color-secondary);
   display: none;
@@ -134,25 +134,23 @@ nav ul {
 }
 
 #menu-label {
-  padding: 0;
-  margin: 0;
   background: center no-repeat url(../../assets/images/Burger.svg);
-  background-size: contain;
-  width: 1.2rem;
-  height: 1rem;
-  overflow: visible;
   z-index: 3;
-}
-
-#menu-checkbox:checked ~ nav {
-  display: block;
 }
 
 #menu-checkbox:checked ~ label {
   background: center no-repeat url(../../assets/images/Close-menu.svg);
+}
+
+#menu-label,
+#menu-checkbox:checked ~ label {
   background-size: contain;
-  width: 1.2rem;
-  height: 1rem;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
 }
 
 .logo {
@@ -160,7 +158,7 @@ nav ul {
 }
 
 .logo img {
-  width: 6rem;
+  width: 7rem;
   padding: 1rem;
 }
 
@@ -185,7 +183,7 @@ nav ul {
 }
 
 .icons img {
-  height: 1rem;
+  height: 1.3rem;
 }
 
 /* Footer */
@@ -238,7 +236,7 @@ footer {
 }
 
 .logo-footer img {
-  width: 8rem;
+  width: 9rem;
   padding: 1rem;
 }
 
@@ -298,11 +296,11 @@ textarea {
 }
 
 .entry-input:focus ~ .entry-label {
-  display:none;
+  display: none;
 }
 
 textarea:focus ~ label {
-  display:none;
+  display: none;
 }
 
 .form-margin {

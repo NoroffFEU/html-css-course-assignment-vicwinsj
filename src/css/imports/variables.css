@@ -2,7 +2,7 @@
   --main-margin: 1rem;
   --border-radius: 1.5rem;
   --border-radius-form: 2rem;
-  --letter-spacing: .2rem;
+  --letter-spacing: 0.2rem;
   --large-cta-desktop: 1.7rem;
   --large-cta-tablet: 1.4rem;
   --large-cta-mobile: 0.8rem;
@@ -39,7 +39,7 @@
   --medium-font-size-desktop: 1rem;
   --medium-font-size-tablet: 0.8rem;
   --medium-font-size-mobile: 0.6rem;
-  --small-font-size-desktop: 0.8rem;
-  --small-font-size-tablet: 0.6rem;
-  --small-font-size-mobile: 0.5rem;
+  --small-font-size-desktop: 0.9rem;
+  --small-font-size-tablet: 0.8rem;
+  --small-font-size-mobile: 0.7rem;
 }
