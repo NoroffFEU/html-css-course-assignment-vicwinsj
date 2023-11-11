@@ -1,6 +1,6 @@
-@import url("./imports/_links.css");
-@import url("./imports/_reset.css");
-@import url("./imports/_variables.css");
+@import url("./imports/links.css");
+@import url("./imports/reset.css");
+@import url("./imports/variables.css");
 
 .index {
     display: grid;
