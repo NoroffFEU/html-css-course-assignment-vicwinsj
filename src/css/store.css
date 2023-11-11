@@ -1,0 +1,34 @@
+@import url("./imports/_links.css");
+@import url("./imports/_reset.css");
+@import url("./imports/_variables.css");
+
+.store {
+    display: grid;
+    gap: 3rem 0;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    min-height: 40rem;
+    margin: 3rem 0;
+  }
+
+.store h1 {
+    grid-column: -1/1;
+    text-align: center;
+}
+
+.jackets,
+.jackets a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jackets p {
+    text-align: center;
+    margin: 0;
+}
+
+.jackets img {
+    height: 10rem;
+    object-fit: contain;
+}

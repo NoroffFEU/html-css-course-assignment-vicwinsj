@@ -1,0 +1,62 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    text-align: center;
+  }
+
+#sub-button {
+    max-width: 10rem;
+    text-align: center;
+    padding: 0;
+}
+
+.cta {
+    border: solid var(--color-cta);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    padding: 0.5rem 1rem;
+    color: var(--color-cta);
+    font-weight: var(--bold-font);
+    background-color: var(--color-secondary);
+    text-align: center;
+    white-space: nowrap;
+    max-height: 5rem;
+    min-height: 2rem;
+    margin: 1rem 0;
+  }
+
+.cta-blue {
+    color: var(--color-primary);
+    border: solid var(--color-primary);
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    font-weight: 570;
+    background-color: var(--color-secondary);
+    text-align: center;
+    max-height: 3rem;
+    margin: 1rem 0;
+}
+
+.cta-blue:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.cta-small {
+    font-size: var(--small-cta-mobile);
+}
+
+.cta-products {
+    max-width: 15rem;
+}
+  
+.cta-large {
+    font-size: var(--large-cta-mobile);
+  }
+  
+.cta:hover {
+    background-color: var(--color-cta);
+    color: var(--color-secondary);
+    cursor: pointer;
+  }

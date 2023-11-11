@@ -1,0 +1,27 @@
+@import url("./imports/_links.css");
+@import url("./imports/_reset.css");
+@import url("./imports/_variables.css");
+
+.checkout-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+    gap: 1rem;
+}
+
+.checkout-cta {
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-success h1 {
+    color: #258666;
+}
+
+.checkout-success img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 30rem;
+}
