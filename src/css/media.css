@@ -1,4 +1,9 @@
 @media (min-width: 800px) {
+  .active {
+    font-weight: var(--bold-font);
+    color: var(--color-cta);
+  }
+
   header {
     align-items: center;
     background-color: none;

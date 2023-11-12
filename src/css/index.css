@@ -18,7 +18,7 @@
 /* Banner */
 
 .banner {
-  background-image: url(../../assets/images/karsten-winegeart-PALZIxURNHk-unsplash.png);
+  background-image: linear-gradient(to bottom, rgb(255,255,255,.5), rgb(255,255,255,0)), url(../../assets/images/karsten-winegeart-PALZIxURNHk-unsplash.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
