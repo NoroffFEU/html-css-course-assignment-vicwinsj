@@ -1,0 +1,45 @@
+:root {
+  --main-margin: 1rem;
+  --border-radius: 1.5rem;
+  --border-radius-form: 2rem;
+  --letter-spacing: 0.2rem;
+  --large-cta-desktop: 1.7rem;
+  --large-cta-tablet: 1.4rem;
+  --large-cta-mobile: 0.8rem;
+  --small-cta-desktop: 1rem;
+  --small-cta-tablet: 0.8rem;
+  --small-cta-mobile: 0.6rem;
+}
+
+/* Colors */
+
+:root {
+  --color-primary: #003742;
+  --color-secondary: #fff;
+  --color-cta: #ffa24b;
+  --color-form: #dadada;
+  --color-form-text: #848484;
+}
+
+/* Font formatting */
+:root {
+  --big-heading-desktop: 3rem;
+  --big-heading-tablet: 2rem;
+  --big-heading-mobile: 1.2rem;
+  --medium-heading-desktop: 2rem;
+  --medium-heading-tablet: 1.5rem;
+  --medium-heading-mobile: 1rem;
+  --small-heading-desktop: 1.5rem;
+  --small-heading-tablet: 1.2rem;
+  --small-heading-mobile: 0.8rem;
+  --bold-font: 570;
+  --big-font-size-desktop: 1.3rem;
+  --big-font-size-tablet: 1rem;
+  --big-font-size-mobile: 0.8rem;
+  --medium-font-size-desktop: 1rem;
+  --medium-font-size-tablet: 0.8rem;
+  --medium-font-size-mobile: 0.6rem;
+  --small-font-size-desktop: 0.9rem;
+  --small-font-size-tablet: 0.8rem;
+  --small-font-size-mobile: 0.7rem;
+}
