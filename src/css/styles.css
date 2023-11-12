@@ -162,11 +162,6 @@ nav ul {
   padding: 1rem;
 }
 
-.active {
-  font-weight: 600;
-  color: var(--color-cta);
-}
-
 .icons {
   display: flex;
   align-self: center;
@@ -289,7 +284,7 @@ textarea {
 .entry-input {
   border: 0.1rem solid var(--color-form);
   border-radius: 0.3rem;
-  min-height: 2rem;
+  min-height: 1rem;
   width: 100%;
   margin: 0.1rem;
   padding-left: 0.5rem;

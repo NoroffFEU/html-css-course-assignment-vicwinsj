@@ -243,6 +243,10 @@
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
   }
+
+  .entry-input {
+    min-height: 2rem;
+  }
 }
 
 @media (min-width: 1300px) {
