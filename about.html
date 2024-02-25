@@ -28,7 +28,7 @@
     />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap"
+      href="https://api.fontshare.com/v2/css?f=general-sans@1,2&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
@@ -49,8 +49,10 @@
         <div>
           <img src="assets/images/Profile.svg" alt="View Profile" />
         </div>
-        <div>
-          <img src="assets/images/Cart.svg" alt="View Cart" />
+        <div id="cart">
+          <a href="checkout.html">
+            <img src="assets/images/Cart.svg" alt="View Cart" />
+          </a>
         </div>
       </div>
       <div class="menu big-font">
@@ -58,8 +60,7 @@
         <label id="menu-label" for="menu-checkbox"></label>
         <nav>
           <ul>
-            <li>Women</li>
-            <li><a href="store.html">Men</a></li>
+            <li><a href="store.html">Store</a></li>
             <li>Brands</li>
             <li>Outlet</li>
           </ul>

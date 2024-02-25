@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Congratulations! You've successfully completed your Rainy Days purchase. Get ready to embrace dry and stylish adventures with your new rain jacket. Thank you for choosing us!"
@@ -31,12 +28,13 @@
     />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap"
+      href="https://api.fontshare.com/v2/css?f=general-sans@1,2&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/checkout-success.css" />
     <link rel="stylesheet" href="src/css/media.css" />
+    <script type="module" src="./scripts/checkout-success.mjs"></script>
   </head>
   <body>
     <header>
@@ -52,8 +50,10 @@
         <div>
           <img src="assets/images/Profile.svg" alt="View Profile" />
         </div>
-        <div>
-          <img src="assets/images/Cart.svg" alt="View Cart" />
+        <div id="cart">
+          <a href="checkout.html">
+            <img src="assets/images/Cart.svg" alt="View Cart" />
+          </a>
         </div>
       </div>
       <div class="menu big-font">
@@ -61,8 +61,7 @@
         <label id="menu-label" for="menu-checkbox"></label>
         <nav>
           <ul>
-            <li>Women</li>
-            <li><a href="store.html">Men</a></li>
+            <li><a href="store.html">Store</a></li>
             <li>Brands</li>
             <li>Outlet</li>
           </ul>
@@ -72,9 +71,15 @@
     <main class="checkout-success">
       <h1 class="big-heading">Order completed</h1>
       <div>
-        <img src="assets/images/Checkout.svg" alt="Green checkout success symbol"/>
+        <img
+          src="assets/images/Checkout.svg"
+          alt="Green checkout success symbol"
+        />
       </div>
-      <div>
+      <div class="order-details">
+        <p id="amount-paid"></p>
+        <h2>Order summary</h2>
+        <div id="order-summary"></div>
         <p>
           Thank you for letting us dress you up!<br />Got questions? Read our
           FAQ or <a href="contact.html">contact us</a>.

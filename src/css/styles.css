@@ -75,6 +75,10 @@ a {
   font-weight: var(--bold-font);
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 /* Header */
 
 header {
@@ -175,6 +179,11 @@ nav ul {
   display: flex;
   align-items: center;
   justify-self: flex-end;
+}
+
+#cart > * {
+  display: flex;
+  align-items: center;
 }
 
 .icons img {
@@ -313,6 +322,7 @@ textarea:focus ~ label {
 }
 
 .carousel > * {
+  cursor: pointer;
   margin: 1rem;
 }
 
@@ -328,4 +338,29 @@ textarea:focus ~ label {
 .product-name {
   text-transform: uppercase;
   font-weight: 570;
+}
+
+.loader-box {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  height: 0.1rem;
+  background-color: var(--color-primary);
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    width: 1rem;
+  }
+
+  50% {
+    width: 15rem;
+  }
+
+  100% {
+    width: 1rem;
+  }
 }

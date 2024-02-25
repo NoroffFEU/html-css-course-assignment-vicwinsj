@@ -27,12 +27,13 @@
     />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap"
+      href="https://api.fontshare.com/v2/css?f=general-sans@1,2&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/css/media.css" />
+    <script type="module" src="./scripts/carousel.mjs"></script>
   </head>
   <body>
     <header class="main">
@@ -48,8 +49,10 @@
         <div>
           <img src="assets/images/Profile.svg" alt="View Profile" />
         </div>
-        <div>
-          <img src="assets/images/Cart.svg" alt="View Cart" />
+        <div id="cart">
+          <a href="checkout.html">
+            <img src="assets/images/Cart.svg" alt="View Cart" />
+          </a>
         </div>
       </div>
       <div class="menu big-font">
@@ -57,8 +60,7 @@
         <label id="menu-label" for="menu-checkbox"></label>
         <nav>
           <ul>
-            <li>Women</li>
-            <li><a href="store.html">Men</a></li>
+            <li><a href="store.html">Store</a></li>
             <li>Brands</li>
             <li>Outlet</li>
           </ul>
@@ -77,70 +79,7 @@
             <h2>New in stock!</h2>
             <a href="store.html" class="cta cta-large">Browse jackets</a>
           </div>
-          <div class="carousel carousel1">
-            <div>
-              <a href="product.html">
-                <div>
-                  <img
-                    src="assets/images/RainyDays_Jacket1.jpg"
-                    alt="Bardufoss jacket"
-                  />
-                </div>
-                <p class="product-name medium-font">Bardufoss</p>
-                <p class="small-font">$ 250.00</p>
-              </a>
-            </div>
-            <div>
-              <div>
-                <img
-                  src="assets/images/RainyDays_Jacket4.jpg"
-                  alt="Hitra jacket"
-                />
-              </div>
-              <p class="product-name medium-font">Hitra</p>
-              <p class="small-font">$ 230.00</p>
-            </div>
-            <div>
-              <div>
-                <img
-                  src="assets/images/RainyDays_Jacket3.jpg"
-                  alt="Beitostølen jacket"
-                />
-              </div>
-              <p class="product-name medium-font">Beitostølen</p>
-              <p class="small-font">$ 180.00</p>
-            </div>
-            <div>
-              <div>
-                <img
-                  src="assets/images/RainyDays_Jacket5.jpg"
-                  alt="Larvik jacket"
-                />
-              </div>
-              <p class="product-name medium-font">Larvik</p>
-              <p class="small-font">$ 150.00</p>
-            </div>
-            <div>
-              <div>
-                <img
-                  src="assets/images/RainyDays_Jacket6.jpg"
-                  alt="Lillehammer jacket"
-                />
-              </div>
-              <p class="product-name medium-font">Lillehammer</p>
-              <p class="small-font">$ 150.00</p>
-            </div>
-            <div>
-              <div>
-                <img
-                  src="assets/images/RainyDays_Jacket7.jpg"
-                  alt="Trysil jacket"
-                />
-              </div>
-              <p class="product-name medium-font">Trysil</p>
-              <p class="small-font">$ 90.00</p>
-            </div>
-          </div>
+          <div id="carousel" class="carousel carousel1"></div>
         </section>
         <section class="newsletter">
           <div>

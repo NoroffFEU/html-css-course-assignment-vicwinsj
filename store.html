@@ -28,12 +28,13 @@
     />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap"
+      href="https://api.fontshare.com/v2/css?f=general-sans@1,2&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/store.css" />
     <link rel="stylesheet" href="src/css/media.css" />
+    <script type="module" src="./scripts/store.mjs"></script>
   </head>
   <body>
     <header>
@@ -49,8 +50,10 @@
         <div>
           <img src="assets/images/Profile.svg" alt="View Profile" />
         </div>
-        <div>
-          <img src="assets/images/Cart.svg" alt="View Cart" />
+        <div id="cart">
+          <a href="checkout.html">
+            <img src="assets/images/Cart.svg" alt="View Cart" />
+          </a>
         </div>
       </div>
       <div class="menu big-font">
@@ -58,72 +61,24 @@
         <label id="menu-label" for="menu-checkbox"></label>
         <nav>
           <ul>
-            <li>Women</li>
-            <li><a href="store.html" class="active">Men</a></li>
+            <li><a href="store.html" class="active">Store</a></li>
             <li>Brands</li>
             <li>Outlet</li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="store">
-      <h1 class="big-heading">Men's Jackets</h1>
-      <div class="jackets">
-        <a href="product.html">
-          <img
-            src="assets/images/RainyDays_Jacket1.jpg"
-            alt="Picture of the Bardufoss jacket"
-          />
-          <p class="product-name medium-font">Bardufoss</p>
-          <p class="small-font">$ 250.00</p>
-          <p class="cta cta-small cta-products">Add to cart</p>
-        </a>
+    <main>
+      <div id="store-heading">
+        <h1 class="big-heading">Rainy Days Store</h1>
+        <button id="filter-btn--women" class="cta-blue">Women</button>
+        <button id="filter-btn--men" class="cta-blue">Men</button>
+        <button id="filter-btn--reset" class="cta">Show All</button>
       </div>
-      <div class="jackets">
-        <img
-          src="assets/images/RainyDays_Jacket4.jpg"
-          alt="Picture of the Hitra jacket"
-        />
-        <p class="product-name medium-font">Hitra</p>
-        <p class="small-font">$ 230.00</p>
-        <p class="cta cta-small cta-products">Add to cart</p>
+      <div class="loader-box">
+        <div class="loader"></div>
       </div>
-      <div class="jackets">
-        <img
-          src="assets/images/RainyDays_Jacket3.jpg"
-          alt="Picture of the Beitostølen jacket"
-        />
-        <p class="product-name medium-font">Beitostølen</p>
-        <p class="small-font">$ 180.00</p>
-        <p class="cta cta-small cta-products">Add to cart</p>
-      </div>
-      <div class="jackets">
-        <img
-          src="assets/images/RainyDays_Jacket5.jpg"
-          alt="Picture of the Larvik jacket"
-        />
-        <p class="product-name medium-font">Larvik</p>
-        <p class="small-font">$ 150.00</p>
-        <p class="cta cta-small cta-products">Add to cart</p>
-      </div>
-      <div class="jackets">
-        <img
-          src="assets/images/RainyDays_Jacket6.jpg"
-          alt="Picture of the Lillehammer jacket"
-        />
-        <p class="product-name medium-font">Lillehammer</p>
-        <p class="small-font">$ 150.00</p>
-        <p class="cta cta-small cta-products">Add to cart</p>
-      </div>
-      <div class="jackets">
-        <img
-          src="assets/images/RainyDays_Jacket7.jpg"
-          alt="Picture of the Trysil jacket"
-        />
-        <p class="product-name medium-font">Trysil</p>
-        <p class="small-font">$ 90.00</p>
-        <p class="cta cta-small cta-products">Add to cart</p>
-      </div>
+      <div id="store"></div>
     </main>
     <footer>
       <div class="footer-menu1 big-font">

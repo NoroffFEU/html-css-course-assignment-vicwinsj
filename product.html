@@ -8,7 +8,7 @@
       name="description"
       content="Bardufoss jacket: Ideal for Arctic conditions, it keeps you dry and hydrated during outdoor activities, ensuring comfort and performance."
     />
-    <title>Bardufoss jacket | Rainy Days</title>
+    <title></title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -28,12 +28,14 @@
     />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap"
+      href="https://api.fontshare.com/v2/css?f=general-sans@1,2&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/product.css" />
     <link rel="stylesheet" href="src/css/media.css" />
+    <script type="module" src="./scripts/product.mjs"></script>
+    <script type="module" src="./scripts/carousel.mjs"></script>
   </head>
   <body>
     <header>
@@ -49,8 +51,10 @@
         <div>
           <img src="assets/images/Profile.svg" alt="View Profile" />
         </div>
-        <div>
-          <img src="assets/images/Cart.svg" alt="View Cart" />
+        <div id="cart">
+          <a href="checkout.html">
+            <img src="assets/images/Cart.svg" alt="View Cart" />
+          </a>
         </div>
       </div>
       <div class="menu big-font">
@@ -58,8 +62,7 @@
         <label id="menu-label" for="menu-checkbox"></label>
         <nav>
           <ul>
-            <li>Women</li>
-            <li><a href="store.html" class="active">Men</a></li>
+            <li><a href="store.html">Store</a></li>
             <li>Brands</li>
             <li>Outlet</li>
           </ul>
@@ -68,31 +71,39 @@
     </header>
     <main>
       <section class="product">
-        <div class="product-image">
-          <img
-            src="assets/images/RainyDays_Jacket1.jpg"
-            alt="Picture of the Bardufoss jacket"
-          />
-        </div>
+        <div id="product-image"></div>
         <div class="product-intro">
-          <h1 class="big-heading">Bardufoss</h1>
-          <p class="price medium-heading">$ 250.00</p>
+          <h1 id="product-heading" class="big-heading"></h1>
+          <p id="price" class="price medium-heading"></p>
           <p class="small-font">
             VAT and shipping costs calculated at checkout. Free delivery above $
             100.00.
           </p>
           <div class="stars">
-            <img src="assets/images/star-blue.svg" alt="Blue star – indicating customers' opinion of the jacket"/>
-            <img src="assets/images/star-blue.svg" alt="Blue star – indicating customers' opinion of the jacket"/>
-            <img src="assets/images/star-blue.svg" alt="Blue star – indicating customers' opinion of the jacket"/>
-            <img src="assets/images/star-blue.svg" alt="Blue star – indicating customers' opinion of the jacket"/>
-            <img src="assets/images/star-grey.svg" alt="Grey star – indicating customers' opinion of the jacket"/>
+            <img
+              src="assets/images/star-blue.svg"
+              alt="Blue star – indicating customers' opinion of the jacket"
+            />
+            <img
+              src="assets/images/star-blue.svg"
+              alt="Blue star – indicating customers' opinion of the jacket"
+            />
+            <img
+              src="assets/images/star-blue.svg"
+              alt="Blue star – indicating customers' opinion of the jacket"
+            />
+            <img
+              src="assets/images/star-blue.svg"
+              alt="Blue star – indicating customers' opinion of the jacket"
+            />
+            <img
+              src="assets/images/star-grey.svg"
+              alt="Grey star – indicating customers' opinion of the jacket"
+            />
           </div>
           <div class="colors">
-            <div>
-              <img src="assets/images/colors.svg" alt="Icon indicating the colors of the jacket" />
-            </div>
-            <p class="medium-font">Grey/Orange</p>
+            <div id="color-box"></div>
+            <p id="color-text" class="medium-font"></p>
           </div>
           <div class="sizes medium-font">
             <p class="unselected">S</p>
@@ -106,10 +117,13 @@
           <div class="product--ctas medium-font">
             <a
               href="checkout.html"
+              id="buy-btn"
               class="cta product-cta medium-font margin-right"
               >Buy now</a
             >
-            <p class="cta-blue product-cta medium-font">Add to cart</p>
+            <button id="add-btn" class="cta-blue product-cta medium-font">
+              Add to cart
+            </button>
           </div>
           <details class="small-font">
             <summary class="medium-font">
@@ -117,80 +131,13 @@
               <h2 class="plus medium-font">+</h2>
               <h2 class="minus medium-font">-</h2>
             </summary>
-            <p>Bardufoss is the jacket for outdoor activities in an arctic climate. The jacket keeps you hydrated as well as dry while you
-              enjoy your favorite outdoor activity.</p>
-            <p>What makes this jacket stick out from other similar models, is
-              that it has the patented DryRain system that makes sure your sweat
-              gets transported out without letting the rain in.</p>
+            <p id="description"></p>
           </details>
         </div>
       </section>
       <section class="product-carousel">
         <h2 class="big-heading">You might also like</h2>
-        <div class="carousel">
-          <div>
-            <a href="product.html">
-              <div>
-                <img
-                  src="assets/images/RainyDays_Jacket1.jpg"
-                  alt="Bardufoss jacket"
-                />
-              </div>
-              <p class="product-name medium-font">Bardufoss</p>
-              <p class="small-font">$ 250.00</p>
-            </a>
-          </div>
-          <div>
-            <div>
-              <img
-                src="assets/images/RainyDays_Jacket4.jpg"
-                alt="Hitra jacket"
-              />
-            </div>
-            <p class="product-name medium-font">Hitra</p>
-            <p class="small-font">$ 230.00</p>
-          </div>
-          <div>
-            <div>
-              <img
-                src="assets/images/RainyDays_Jacket3.jpg"
-                alt="Beitostølen jacket"
-              />
-            </div>
-            <p class="product-name medium-font">Beitostølen</p>
-            <p class="small-font">$ 180.00</p>
-          </div>
-          <div>
-            <div>
-              <img
-                src="assets/images/RainyDays_Jacket5.jpg"
-                alt="Larvik jacket"
-              />
-            </div>
-            <p class="product-name medium-font">Larvik</p>
-            <p class="small-font">$ 150.00</p>
-          </div>
-          <div>
-            <div>
-              <img
-                src="assets/images/RainyDays_Jacket6.jpg"
-                alt="Lillehammer jacket"
-              />
-            </div>
-            <p class="product-name medium-font">Lillehammer</p>
-            <p class="small-font">$ 150.00</p>
-          </div>
-          <div>
-            <div>
-              <img
-                src="assets/images/RainyDays_Jacket7.jpg"
-                alt="Trysil jacket"
-              />
-            </div>
-            <p class="product-name medium-font">Trysil</p>
-            <p class="small-font">$ 90.00</p>
-          </div>
-        </div>
+        <div id="carousel" class="carousel"></div>
       </section>
     </main>
     <footer>

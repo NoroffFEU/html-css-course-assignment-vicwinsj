@@ -39,9 +39,11 @@ a {
   margin: 1rem 0;
 }
 
-.cta-blue:hover {
+.cta-blue:hover,
+.cta-blue-chosen {
   background-color: var(--color-primary);
   color: var(--color-secondary);
+  cursor: pointer;
 }
 
 .cta-small {
@@ -56,8 +58,22 @@ a {
   font-size: var(--large-cta-mobile);
 }
 
-.cta:hover {
+.cta:hover,
+.cta-chosen {
   background-color: var(--color-cta);
   color: var(--color-secondary);
   cursor: pointer;
+}
+
+.clearbutton {
+  margin: 1rem;
+}
+
+.quantity-btn {
+  max-width: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  text-align: center;
 }

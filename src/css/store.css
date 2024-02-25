@@ -2,7 +2,7 @@
 @import url("./imports/reset.css");
 @import url("./imports/variables.css");
 
-.store {
+#store {
   display: grid;
   gap: 3rem 0;
   grid-template-columns: repeat(2, auto);
@@ -11,7 +11,7 @@
   margin: 3rem 0;
 }
 
-.store h1 {
+#store-heading {
   grid-column: -1/1;
   text-align: center;
 }
@@ -21,6 +21,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#store div {
+  cursor: pointer;
 }
 
 .jackets p {

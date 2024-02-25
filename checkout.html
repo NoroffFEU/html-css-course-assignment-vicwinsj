@@ -28,12 +28,13 @@
     />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap"
+      href="https://api.fontshare.com/v2/css?f=general-sans@1,2&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/checkout.css" />
     <link rel="stylesheet" href="src/css/media.css" />
+    <script type="module" src="./scripts/checkout.mjs"></script>
   </head>
   <body>
     <header>
@@ -49,8 +50,10 @@
         <div>
           <img src="assets/images/Profile.svg" alt="View Profile" />
         </div>
-        <div>
-          <img src="assets/images/Cart.svg" alt="View Cart" />
+        <div id="cart">
+          <a href="checkout.html">
+            <img src="assets/images/Cart.svg" alt="View Cart" />
+          </a>
         </div>
       </div>
       <div class="menu big-font">
@@ -58,8 +61,7 @@
         <label id="menu-label" for="menu-checkbox"></label>
         <nav>
           <ul>
-            <li>Women</li>
-            <li><a href="store.html">Men</a></li>
+            <li><a href="store.html">Store</a></li>
             <li>Brands</li>
             <li>Outlet</li>
           </ul>
@@ -67,33 +69,17 @@
       </div>
     </header>
     <main class="checkout">
-      <section class="cart-summary medium-font">
+      <section id="cart-summary" class="medium-font">
         <h1>Cart summary</h1>
-        <div class="cart-summary--product">
-          <div>
-            <img
-              src="assets/images/RainyDays_Jacket1.jpg"
-              alt="Picture of the Bardufoss jacket"
-            />
-          </div>
-          <div class="cart-summary--product--letters">
-            <div>
-              <p>Bardufoss <span class="bold">x 1</span></p>
-              <p>Size: <span class="bold">L</span></p>
-            </div>
-          </div>
-          <p class="bold">$ 250.00</p>
-        </div>
+        <div id="cart-summary--products"></div>
         <div class="cart-summary--total">
-          <div>
-            <p>Subtotal</p>
+          <div id="cart-total-text">
             <p>VAT (25 %)</p>
-            <p class="bold">TOTAL</p>
+            <p class="total bold">TOTAL</p>
           </div>
-          <div>
-            <p class="bold">$ 250.00</p>
-            <p class="bold">$ 62.00</p>
-            <p class="bold">$ 250.00</p>
+          <div id="cart-total">
+            <p id="vat" class="bold"></p>
+            <p id="total" class="bold"></p>
           </div>
         </div>
       </section>
@@ -179,7 +165,7 @@
               </p>
             </div>
             <div>
-              <img src="assets/images/vipps.png" alt="Vipps logo"/>
+              <img src="assets/images/vipps.png" alt="Vipps logo" />
             </div>
           </div>
         </div>
@@ -191,16 +177,16 @@
             </div>
             <div class="card-logos">
               <div>
-                <img src="assets/images/visa.png" alt="Visa logo"/>
+                <img src="assets/images/visa.png" alt="Visa logo" />
               </div>
               <div>
-                <img src="assets/images/discover.png" alt="Discover logo"/>
+                <img src="assets/images/discover.png" alt="Discover logo" />
               </div>
               <div>
-                <img src="assets/images/maestro.png" alt="Maestro logo"/>
+                <img src="assets/images/maestro.png" alt="Maestro logo" />
               </div>
               <div>
-                <img src="assets/images/mastercard.png" alt="MasterCard logo"/>
+                <img src="assets/images/mastercard.png" alt="MasterCard logo" />
               </div>
             </div>
           </div>
@@ -241,12 +227,7 @@
         </div>
       </form>
       <div class="checkout-button">
-        <button
-          class="cta cta--cart medium-font"
-          onclick="window.location.href='checkout-success.html';"
-        >
-          Place order
-        </button>
+        <button id="cta--cart" class="cta medium-font">Place order</button>
       </div>
     </main>
     <footer>
