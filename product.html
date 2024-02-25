@@ -74,7 +74,10 @@
         <div id="product-image"></div>
         <div class="product-intro">
           <h1 id="product-heading" class="big-heading"></h1>
-          <p id="price" class="price medium-heading"></p>
+          <div class="prices">
+            <p id="price" class="price medium-heading"></p>
+            <p id="discounted-price" class="bold medium-heading discount"></p>
+          </div>
           <p class="small-font">
             VAT and shipping costs calculated at checkout. Free delivery above $
             100.00.
@@ -137,6 +140,9 @@
       </section>
       <section class="product-carousel">
         <h2 class="big-heading">You might also like</h2>
+        <div class="loader-box">
+          <div class="loader"></div>
+        </div>
         <div id="carousel" class="carousel"></div>
       </section>
     </main>

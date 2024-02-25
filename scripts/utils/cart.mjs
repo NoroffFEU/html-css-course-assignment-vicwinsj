@@ -73,7 +73,11 @@ export function clearCartConfirmation() {
 export function calculateCartTotal(cart) {
   let total = 0;
   cart.forEach((product) => {
-    total += product.price * product.quantity;
+    if (product.onSale) {
+      total += product.discountedPrice * product.quantity;
+    } else {
+      total += product.price * product.quantity;
+    }
   });
   return total;
 }

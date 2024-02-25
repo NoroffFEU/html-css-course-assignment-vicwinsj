@@ -1,4 +1,4 @@
 export function productUrl(product) {
-  const productUrl = `/product.html?id=${product.id}`;
+  const productUrl = `html-css-course-assignment-vicwinsj/product.html?id=${product.id}`;
   window.location.href = productUrl;
 }

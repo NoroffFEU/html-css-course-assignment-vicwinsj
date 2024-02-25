@@ -335,6 +335,12 @@ textarea:focus ~ label {
   text-align: center;
 }
 
+.carousel-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-name {
   text-transform: uppercase;
   font-weight: 570;
@@ -363,4 +369,16 @@ textarea:focus ~ label {
   100% {
     width: 1rem;
   }
+}
+
+.discount {
+  color: var(--color-cta);
+}
+
+.prices {
+  display: flex;
+}
+
+#prices-p {
+  margin: 0.1rem;
 }

@@ -59,12 +59,31 @@ function createCartSummary(product) {
     renderCheckoutPage();
   });
 
+  const priceContainer = document.createElement("div");
+  priceContainer.className = "prices";
+
   const productPrice = document.createElement("p");
-  productPrice.classList = "bold";
+  productPrice.id = "prices-p";
+  productPrice.classList = "bold prices-p";
   productPrice.textContent =
     "$ " + formatCurrency(product.price * product.quantity);
 
-  productContainer.append(imageContainer, productInfo, productPrice);
+  const discountedPrice = document.createElement("p");
+  discountedPrice.id = "prices-p";
+  discountedPrice.classList = "discount bold";
+  discountedPrice.textContent =
+    "$ " + formatCurrency(product.discountedPrice * product.quantity);
+
+  if (product.onSale) {
+    productPrice.style.textDecoration = "line-through";
+  } else {
+    discountedPrice.innerText = "";
+  }
+
+  priceContainer.append(productPrice, discountedPrice);
+
+  productContainer.append(imageContainer, productInfo, priceContainer);
+
   imageContainer.appendChild(productImage);
   productInfo.appendChild(productInfoDiv);
   productInfoDiv.append(productTitle, productSize, buttonDiv);

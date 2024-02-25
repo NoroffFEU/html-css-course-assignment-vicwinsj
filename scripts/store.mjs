@@ -52,19 +52,40 @@ function generateProducts(product) {
   title.onclick = function () {
     productUrl(product);
   };
+
+  const priceContainer = document.createElement("div");
+  priceContainer.className = "prices";
+
   const price = document.createElement("p");
+  price.id = "prices-p";
   price.className = "small-font";
   price.innerText = `$ ${product.price}`;
   price.onclick = function () {
     productUrl(product);
   };
+
+  const discountedPrice = document.createElement("p");
+  discountedPrice.id = "prices-p";
+  discountedPrice.className = "small-font bold discount";
+  discountedPrice.innerText = `$ ${product.discountedPrice}`;
+  discountedPrice.onclick = function () {
+    productUrl(product);
+  };
+
+  if (product.onSale) {
+    price.style.textDecoration = "line-through";
+  } else {
+    discountedPrice.innerText = "";
+  }
+
   const cta = document.createElement("button");
   cta.className = "cta cta-small cta-products";
   cta.innerText = "Add to cart";
   cta.addEventListener("click", () => {
     addToCart(product);
   });
-  productContainer.append(productLink, img, title, price, cta);
+  priceContainer.append(price, discountedPrice);
+  productContainer.append(productLink, img, title, priceContainer, cta);
   return productContainer;
 }
 
