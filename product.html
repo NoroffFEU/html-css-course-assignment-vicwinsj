@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Discover our premium collection of stylish and weather-resistant rain jackets. Embrace comfort without compromising on style. Your perfect companion for every stormy adventure awaits!"
+      content="Bardufoss jacket: Ideal for Arctic conditions, it keeps you dry and hydrated during outdoor activities, ensuring comfort and performance."
     />
-    <title>Pushing the Comfort Zone | Rainy Days</title>
+    <title></title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -31,12 +32,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
-    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/product.css" />
     <link rel="stylesheet" href="src/css/media.css" />
+    <script type="module" src="./scripts/product.mjs"></script>
     <script type="module" src="./scripts/carousel.mjs"></script>
   </head>
   <body>
-    <header class="main">
+    <header>
       <div class="logo">
         <a href="index.html">
           <img src="assets/images/RainyDays_Logo.png" alt="Rainy Days logo" />
@@ -68,82 +70,81 @@
       </div>
     </header>
     <main>
-      <section class="banner">
-        <div>
-          <h1 class="banner-content">Pushing the comfort zone</h1>
+      <section class="product">
+        <div id="product-image"></div>
+        <div class="product-intro">
+          <h1 id="product-heading" class="big-heading"></h1>
+          <div class="prices">
+            <p id="price" class="price medium-heading"></p>
+            <p id="discounted-price" class="bold medium-heading discount"></p>
+          </div>
+          <p class="small-font">
+            VAT and shipping costs calculated at checkout. Free delivery above $
+            100.00.
+          </p>
+          <div class="stars">
+            <img
+              src="assets/images/star-blue.svg"
+              alt="Blue star – indicating customers' opinion of the jacket"
+            />
+            <img
+              src="assets/images/star-blue.svg"
+              alt="Blue star – indicating customers' opinion of the jacket"
+            />
+            <img
+              src="assets/images/star-blue.svg"
+              alt="Blue star – indicating customers' opinion of the jacket"
+            />
+            <img
+              src="assets/images/star-blue.svg"
+              alt="Blue star – indicating customers' opinion of the jacket"
+            />
+            <img
+              src="assets/images/star-grey.svg"
+              alt="Grey star – indicating customers' opinion of the jacket"
+            />
+          </div>
+          <div class="colors">
+            <div id="color-box"></div>
+            <p id="color-text" class="medium-font"></p>
+          </div>
+          <div class="sizes medium-font">
+            <p class="unselected">S</p>
+            <p class="unselected no-border-left">M</p>
+            <p class="selected">L</p>
+            <p class="unselected no-border-left">XL</p>
+            <p class="unselected no-border-left">XXL</p>
+          </div>
+        </div>
+        <div class="product-details">
+          <div class="product--ctas medium-font">
+            <a
+              href="checkout.html"
+              id="buy-btn"
+              class="cta product-cta medium-font margin-right"
+              >Buy now</a
+            >
+            <button id="add-btn" class="cta-blue product-cta medium-font">
+              Add to cart
+            </button>
+          </div>
+          <details class="small-font">
+            <summary class="medium-font">
+              <h2 class="medium-font">Description</h2>
+              <h2 class="plus medium-font">+</h2>
+              <h2 class="minus medium-font">-</h2>
+            </summary>
+            <p id="description"></p>
+          </details>
         </div>
       </section>
-      <div class="index">
-        <section class="new-stock">
-          <div class="new-stock--content">
-            <h2>New in stock!</h2>
-            <a href="store.html" class="cta cta-large">Browse jackets</a>
-          </div>
-          <div class="loader-box">
-            <div class="loader"></div>
-          </div>
-          <div id="carousel" class="carousel carousel1"></div>
-        </section>
-        <section class="newsletter">
-          <div>
-            <h2 class="medium-heading no-uppercase">
-              Why staying dry is so important
-            </h2>
-            <p class="big-font">
-              When the skies open up and rain starts pouring down, there's one
-              thing we all want more than anything else – to stay dry. That's
-              where a trusty rain jacket comes into play. Beyond just keeping
-              you comfortable, staying dry is essential for a multitude of
-              reasons. In this article, we'll explore why staying dry is so
-              important and how investing in a high-quality rain jacket can make
-              a world of difference.
-            </p>
-          </div>
-          <div>
-            <h3>
-              Read more about staying dry by signing up for our newsletter
-            </h3>
-            <div class="subscribe">
-              <div class="entryfields form-margin">
-                <input
-                  class="entry-input"
-                  type="email"
-                  id="sub-email"
-                  name="email"
-                />
-                <label
-                  id="sub-label"
-                  class="entry-label medium-font"
-                  for="sub-email"
-                  >Enter your email address</label
-                >
-              </div>
-              <button id="sub-button" class="cta cta-small">Subscribe</button>
-            </div>
-          </div>
-        </section>
-        <div class="canoe">
-          <div>
-            <img
-              src="assets/images/kamil-kalbarczyk-lY11p3yNVxE-unsplash.jpg"
-              alt="Man in canoe"
-            />
-          </div>
+      <section class="product-carousel">
+        <h2 class="big-heading">You might also like</h2>
+        <div class="loader-box">
+          <div class="loader"></div>
         </div>
-        <div class="sale">
-          <div class="sale-img">
-            <img
-              src="assets/images/toomas-tartes-Yizrl9N_eDA-unsplash.png"
-              alt="A couple hiking in the mountains"
-            />
-            <div class="sale-tag">
-              <p>Up to</p>
-              <p class="big">-70 %</p>
-              <p>in our outlet!</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div id="carousel" class="carousel"></div>
+      </section>
     </main>
     <footer>
       <div class="footer-menu1 big-font">

@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Discover our premium collection of stylish and weather-resistant rain jackets. Embrace comfort without compromising on style. Your perfect companion for every stormy adventure awaits!"
+      content="Reach out for inquiries, assistance, or just to share your rainy-day stories. We're here to help you find the perfect rain jacket. Let's stay dry together!"
     />
-    <title>Pushing the Comfort Zone | Rainy Days</title>
+    <title>Contact us | Rainy Days</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -31,12 +32,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
-    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
     <link rel="stylesheet" href="src/css/media.css" />
-    <script type="module" src="./scripts/carousel.mjs"></script>
   </head>
   <body>
-    <header class="main">
+    <header>
       <div class="logo">
         <a href="index.html">
           <img src="assets/images/RainyDays_Logo.png" alt="Rainy Days logo" />
@@ -67,81 +67,66 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section class="banner">
-        <div>
-          <h1 class="banner-content">Pushing the comfort zone</h1>
-        </div>
+    <main class="contact">
+      <section class="contact--content">
+        <h1 class="big-heading">Contact us</h1>
+        <p class="medium-font">
+          Do you have questions you can’t find the answer to in our FAQs? Feel
+          free to use the contact form to get in touch with us. We will reply
+          you within the next working day.
+        </p>
+        <p class="medium-font">
+          You may also reach us by sending a mail to post@rainydays.com.
+        </p>
       </section>
-      <div class="index">
-        <section class="new-stock">
-          <div class="new-stock--content">
-            <h2>New in stock!</h2>
-            <a href="store.html" class="cta cta-large">Browse jackets</a>
-          </div>
-          <div class="loader-box">
-            <div class="loader"></div>
-          </div>
-          <div id="carousel" class="carousel carousel1"></div>
-        </section>
-        <section class="newsletter">
-          <div>
-            <h2 class="medium-heading no-uppercase">
-              Why staying dry is so important
-            </h2>
-            <p class="big-font">
-              When the skies open up and rain starts pouring down, there's one
-              thing we all want more than anything else – to stay dry. That's
-              where a trusty rain jacket comes into play. Beyond just keeping
-              you comfortable, staying dry is essential for a multitude of
-              reasons. In this article, we'll explore why staying dry is so
-              important and how investing in a high-quality rain jacket can make
-              a world of difference.
-            </p>
-          </div>
-          <div>
-            <h3>
-              Read more about staying dry by signing up for our newsletter
-            </h3>
-            <div class="subscribe">
-              <div class="entryfields form-margin">
-                <input
-                  class="entry-input"
-                  type="email"
-                  id="sub-email"
-                  name="email"
-                />
-                <label
-                  id="sub-label"
-                  class="entry-label medium-font"
-                  for="sub-email"
-                  >Enter your email address</label
-                >
-              </div>
-              <button id="sub-button" class="cta cta-small">Subscribe</button>
-            </div>
-          </div>
-        </section>
-        <div class="canoe">
-          <div>
-            <img
-              src="assets/images/kamil-kalbarczyk-lY11p3yNVxE-unsplash.jpg"
-              alt="Man in canoe"
+      <div class="contact--submission">
+        <form class="contact-form medium-font">
+          <div class="entryfields contact-form-inputs margin0">
+            <input
+              class="entry-input"
+              type="text"
+              id="name"
+              name="name"
+              required
             />
+            <label class="entry-label" for="name">Name</label>
           </div>
-        </div>
-        <div class="sale">
-          <div class="sale-img">
-            <img
-              src="assets/images/toomas-tartes-Yizrl9N_eDA-unsplash.png"
-              alt="A couple hiking in the mountains"
+          <div class="entryfields contact-form-inputs margin0">
+            <input
+              class="entry-input"
+              type="email"
+              id="contact-email"
+              name="email"
+              required
             />
-            <div class="sale-tag">
-              <p>Up to</p>
-              <p class="big">-70 %</p>
-              <p>in our outlet!</p>
-            </div>
+            <label class="entry-label" for="contact-email">Email</label>
           </div>
+          <div class="entryfields contact-form-inputs margin0">
+            <input
+              class="entry-input"
+              type="email"
+              id="topic"
+              name="topic"
+              required
+            />
+            <label class="entry-label" for="topic">Topic</label>
+          </div>
+          <div class="entryfields contact-form-textarea margin0">
+            <textarea
+              class="entry-input"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <label class="entry-label" for="message"
+              >Write your message here</label
+            >
+          </div>
+        </form>
+        <div class="contact-cta">
+          <button id="contact-button" class="cta medium-font">
+            Send message
+          </button>
         </div>
       </div>
     </main>

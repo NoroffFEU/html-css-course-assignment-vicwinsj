@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Finalize your order for top-notch rain jackets that blend style and weather resistance. Your journey to staying dry and stylish begins here. Thank you for choosing Rainy Days!"
+    />
+    <title>Checkout | Rainy Days</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link
+      href="https://api.fontshare.com/v2/css?f=general-sans@1,2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/checkout.css" />
+    <link rel="stylesheet" href="src/css/media.css" />
+    <script type="module" src="./scripts/checkout.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/RainyDays_Logo.png" alt="Rainy Days logo" />
+        </a>
+      </div>
+      <div class="icons">
+        <div>
+          <img src="assets/images/Search.svg" alt="Search" />
+        </div>
+        <div>
+          <img src="assets/images/Profile.svg" alt="View Profile" />
+        </div>
+        <div id="cart">
+          <a href="checkout.html">
+            <img src="assets/images/Cart.svg" alt="View Cart" />
+          </a>
+        </div>
+      </div>
+      <div class="menu big-font">
+        <input type="checkbox" id="menu-checkbox" />
+        <label id="menu-label" for="menu-checkbox"></label>
+        <nav>
+          <ul>
+            <li><a href="store.html">Store</a></li>
+            <li>Brands</li>
+            <li>Outlet</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="checkout">
+      <section id="cart-summary" class="medium-font">
+        <h1>Cart summary</h1>
+        <div id="cart-summary--products"></div>
+        <div class="cart-summary--total">
+          <div id="cart-total-text">
+            <p>VAT (25 %)</p>
+            <p class="total bold">TOTAL</p>
+          </div>
+          <div id="cart-total">
+            <p id="vat" class="bold"></p>
+            <p id="total" class="bold"></p>
+          </div>
+        </div>
+      </section>
+      <form method="POST" class="shipping medium-font">
+        <h2>Shipping address</h2>
+        <div class="flex-inputs">
+          <div class="entryfields form-margin">
+            <input
+              class="entry-input"
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+            />
+            <label class="entry-label" for="first-name">First Name*</label>
+          </div>
+          <div class="entryfields form-margin">
+            <input
+              class="entry-input"
+              type="text"
+              id="surname"
+              name="surname"
+              required
+            />
+            <label class="entry-label" for="surname">Surname*</label>
+          </div>
+        </div>
+        <div class="entryfields form-margin">
+          <input
+            class="entry-input"
+            type="text"
+            id="street"
+            name="street"
+            required
+          />
+          <label class="entry-label" for="street">Street Address*</label>
+        </div>
+        <div class="entryfields form-margin">
+          <input class="entry-input" type="text" id="co" name="C/o" />
+          <label class="entry-label" for="co">C/o</label>
+        </div>
+        <div class="flex-inputs">
+          <div class="entryfields quarter form-margin">
+            <input
+              class="entry-input"
+              type="text"
+              id="postal-code"
+              name="postal-code"
+              required
+            />
+            <label class="entry-label" for="postal-code">Postal Code*</label>
+          </div>
+          <div class="entryfields three-quarters form-margin">
+            <input class="entry-input" type="text" id="city" name="city" />
+            <label class="entry-label" for="city">City*</label>
+          </div>
+        </div>
+        <div class="entryfields form-margin">
+          <input
+            class="entry-input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <label class="entry-label" for="email">Email</label>
+        </div>
+        <div class="entryfields form-margin">
+          <input class="entry-input" type="tel" id="phone" name="phone" />
+          <label class="entry-label" for="phone">Phone Number</label>
+        </div>
+        <p class="medium-font">*Mandatory fields</p>
+      </form>
+      <form method="POST" class="payment medium-font">
+        <h2>Payment options</h2>
+        <div class="container">
+          <div class="container--content">
+            <div class="vipps">
+              <input type="radio" id="radio-checked" name="radio" checked />
+              <label class="bold-label" for="radio-checked">Vipps</label>
+              <p class="medium-font">
+                You will be redirected to Vipps after submitting your order
+              </p>
+            </div>
+            <div>
+              <img src="assets/images/vipps.png" alt="Vipps logo" />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container--content">
+            <div>
+              <input type="radio" id="radio" name="radio" />
+              <label class="bold-label" for="radio">Credit card</label>
+            </div>
+            <div class="card-logos">
+              <div>
+                <img src="assets/images/visa.png" alt="Visa logo" />
+              </div>
+              <div>
+                <img src="assets/images/discover.png" alt="Discover logo" />
+              </div>
+              <div>
+                <img src="assets/images/maestro.png" alt="Maestro logo" />
+              </div>
+              <div>
+                <img src="assets/images/mastercard.png" alt="MasterCard logo" />
+              </div>
+            </div>
+          </div>
+          <div class="flex-inputs">
+            <div class="entryfields form-margin">
+              <input
+                class="entry-input"
+                type="number"
+                id="card-number"
+                name="card-number"
+                required
+              />
+              <label class="entry-label" for="card-number">Card number</label>
+            </div>
+            <div class="entryfields form-margin">
+              <input
+                class="entry-input"
+                type="number"
+                id="exp-date"
+                name="expiration-date"
+                required
+              />
+              <label class="entry-label" for="exp-date"
+                >Expiration date (DDMM)</label
+              >
+            </div>
+          </div>
+          <div class="entryfields security form-margin">
+            <input
+              class="entry-input"
+              type="number"
+              id="security-code"
+              name="security-code"
+              required
+            />
+            <label class="entry-label" for="security-code">Security code</label>
+          </div>
+        </div>
+      </form>
+      <div class="checkout-button">
+        <button id="cta--cart" class="cta medium-font">Place order</button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-menu1 big-font">
+        <div>
+          <a href="index.html">Home</a>
+          <a href="store.html">Store</a>
+        </div>
+      </div>
+      <div class="footer-menu2 big-font">
+        <div>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div class="copyright small-font">
+        <div class="logo-footer">
+          <img
+            src="assets/images/RainyDays_Logo_white.png"
+            alt="White Rainy Days logo"
+            class="logo-footer"
+          />
+        </div>
+        <p>©2023 Rainydays</p>
+      </div>
+      <div class="socials">
+        <div>
+          <img src="assets/images/Facebook.svg" alt="Facebook" />
+        </div>
+        <div>
+          <img src="assets/images/Instagram.svg" alt="Instagram" />
+        </div>
+        <div>
+          <img src="assets/images/YouTube.svg" alt="YouTube" />
+        </div>
+        <div>
+          <img src="assets/images/TikTok.svg" alt="TikTok" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

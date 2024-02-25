@@ -1,19 +1,384 @@
-/* Use import to split up your CSS into manageable chunks */
-@import url("./_reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
-@import url("./_variables.css");
-/* Feel free to add as many of these imports as you need */
+@import url("./imports/links.css");
+@import url("./imports/reset.css");
+@import url("./imports/variables.css");
+
+html {
+  font-family: "General Sans", sans-serif;
+}
 
 body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
-}
-
-.centered {
-  display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: center;
+  text-align: left;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Fonts */
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: var(--bold-font);
+}
+
+h1 {
+  font-size: var(--big-heading-mobile);
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: var(--medium-heading-mobile);
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: var(--small-heading-mobile);
+  font-weight: var(--bold-font);
+}
+
+.big-heading {
+  font-size: var(--big-heading-mobile);
+}
+
+.medium-heading {
+  font-size: var(--medium-heading-mobile);
+  white-space: normal;
+  text-transform: none;
+}
+
+.big-font {
+  font-size: var(--big-font-size-mobile);
+}
+
+.medium-font {
+  font-size: var(--medium-font-size-mobile);
+}
+
+.small-font {
+  font-size: var(--small-font-size-mobile);
+}
+
+.no-uppercase {
+  text-transform: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.bold {
+  font-weight: var(--bold-font);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Header */
+
+header {
+  border-bottom: 0.1rem solid var(--color-cta);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  z-index: 1;
+  position: relative;
+  justify-content: space-around;
+  height: auto;
+}
+
+nav {
+  background-color: var(--color-cta);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+  font-size: var(--medium-font-size);
+  font-weight: 400;
+  padding: 0;
+  width: 100vw;
+  height: 34.6rem;
+  text-decoration: none;
+  color: var(--color-secondary);
+  display: none;
+  position: absolute;
+  top: -3rem;
+  right: -1.5rem;
+}
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  flex: 1;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+#menu-label {
+  background: center no-repeat url(../../assets/images/Burger.svg);
+  z-index: 3;
+}
+
+#menu-checkbox:checked ~ label {
+  background: center no-repeat url(../../assets/images/Close-menu.svg);
+}
+
+#menu-label,
+#menu-checkbox:checked ~ label {
+  background-size: contain;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+.logo {
+  flex: 20;
+}
+
+.logo img {
+  width: 7rem;
+  padding: 1rem;
+}
+
+.icons {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex: 20;
+}
+
+.icons > * {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+#cart > * {
+  display: flex;
+  align-items: center;
+}
+
+.icons img {
+  height: 1.3rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  padding: 3rem 0;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.footer-menu1 {
+  display: flex;
+  justify-content: center;
+  order: 2;
+  flex: 1;
+}
+
+.footer-menu2 {
+  display: flex;
+  justify-content: center;
+  order: 4;
+  flex: 1;
+}
+
+.footer-menu1 div,
+.footer-menu2 div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu1 a,
+.footer-menu2 a {
+  text-align: left;
+}
+
+.copyright {
+  order: 3;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+.logo-footer img {
+  width: 9rem;
+  padding: 1rem;
+}
+
+.socials {
+  flex: 0 0 100%;
+  order: 1;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socials img {
+  height: 1rem;
+}
+
+/* Forms */
+
+form {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: var(--color-form-text);
+  font-size: var(--small-font-size);
+}
+
+textarea {
+  margin-top: 5rem;
+  height: 20rem;
+  padding-top: 0.5rem;
+  resize: none;
+}
+
+.entryfields {
+  position: relative;
+}
+
+.entry-label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.entry-input {
+  border: 0.1rem solid var(--color-form);
+  border-radius: 0.3rem;
+  min-height: 1rem;
+  width: 100%;
+  margin: 0.1rem;
+  padding-left: 0.5rem;
+}
+
+.entry-input:focus ~ .entry-label {
+  display: none;
+}
+
+textarea:focus ~ label {
+  display: none;
+}
+
+.form-margin {
+  margin: 0.3rem;
+}
+
+/* Carousel */
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  margin: var(--main-margin) 0 var(--main-margin) 2rem;
+  max-width: 100vw;
+}
+
+.carousel > * {
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.carousel img {
+  max-height: 15rem;
+  object-fit: contain;
+}
+
+.carousel p {
+  text-align: center;
+}
+
+.carousel-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-name {
+  text-transform: uppercase;
+  font-weight: 570;
+}
+
+.loader-box {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  height: 0.1rem;
+  background-color: var(--color-primary);
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    width: 1rem;
+  }
+
+  50% {
+    width: 15rem;
+  }
+
+  100% {
+    width: 1rem;
+  }
+}
+
+.discount {
+  color: var(--color-cta);
+}
+
+.prices {
+  display: flex;
+}
+
+#prices-p {
+  margin: 0.1rem;
 }

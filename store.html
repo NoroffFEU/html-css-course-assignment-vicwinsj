@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rainy Days offers sleek male rain jackets, combining style and functionality. Stay dry and look sharp with our weather-resistant designs. Embrace the storm!"
+    />
+    <title>Men's Jackets | Rainy Days</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link
+      href="https://api.fontshare.com/v2/css?f=general-sans@1,2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/store.css" />
+    <link rel="stylesheet" href="src/css/media.css" />
+    <script type="module" src="./scripts/store.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/RainyDays_Logo.png" alt="Rainy Days logo" />
+        </a>
+      </div>
+      <div class="icons">
+        <div>
+          <img src="assets/images/Search.svg" alt="Search" />
+        </div>
+        <div>
+          <img src="assets/images/Profile.svg" alt="View Profile" />
+        </div>
+        <div id="cart">
+          <a href="checkout.html">
+            <img src="assets/images/Cart.svg" alt="View Cart" />
+          </a>
+        </div>
+      </div>
+      <div class="menu big-font">
+        <input type="checkbox" id="menu-checkbox" />
+        <label id="menu-label" for="menu-checkbox"></label>
+        <nav>
+          <ul>
+            <li><a href="store.html" class="active">Store</a></li>
+            <li>Brands</li>
+            <li>Outlet</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="store-heading">
+        <h1 class="big-heading">Rainy Days Store</h1>
+        <button id="filter-btn--women" class="cta-blue">Women</button>
+        <button id="filter-btn--men" class="cta-blue">Men</button>
+        <button id="filter-btn--reset" class="cta">Show All</button>
+      </div>
+      <div class="loader-box">
+        <div class="loader"></div>
+      </div>
+      <div id="store"></div>
+    </main>
+    <footer>
+      <div class="footer-menu1 big-font">
+        <div>
+          <a href="index.html">Home</a>
+          <a href="store.html">Store</a>
+        </div>
+      </div>
+      <div class="footer-menu2 big-font">
+        <div>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div class="copyright small-font">
+        <div class="logo-footer">
+          <img
+            src="assets/images/RainyDays_Logo_white.png"
+            alt="White Rainy Days logo"
+            class="logo-footer"
+          />
+        </div>
+        <p>©2023 Rainydays</p>
+      </div>
+      <div class="socials">
+        <div>
+          <img src="assets/images/Facebook.svg" alt="Facebook" />
+        </div>
+        <div>
+          <img src="assets/images/Instagram.svg" alt="Instagram" />
+        </div>
+        <div>
+          <img src="assets/images/YouTube.svg" alt="YouTube" />
+        </div>
+        <div>
+          <img src="assets/images/TikTok.svg" alt="TikTok" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
